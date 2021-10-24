@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
-
-import { SocialMediaAuth, TextField, Button } from '../../Components/';
+import { SocialMediaAuth, TextField, Button } from './../../Components/';
 
 import './Login.scss';
 
