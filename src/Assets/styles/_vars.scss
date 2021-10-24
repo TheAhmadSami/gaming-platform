@@ -1,10 +1,10 @@
 :root {
-  --primary: rgb(47, 198, 183);
-  --primary-hover: hsl(174, 62%, 43%);
-  --primary-10: hsla(174, 62%, 43%, .1);
-  --primary-15: hsla(174, 62%, 43%, .15);
-  --primary-20: hsla(174, 62%, 43%, .2);
-  --primary-50: hsla(174, 62%, 43%, .5);
+  --primary: hsl(20, 92%, 53%);
+  --primary-hover: hsl(20, 92%, 45%);
+  --primary-10: hsla(20, 92%, 53%, .1);
+  --primary-15: hsla(20, 92%, 53%, .15);
+  --primary-20: hsla(20, 92%, 53%, .2);
+  --primary-50: hsla(20, 92%, 53%, .5);
 
   --sec: rgb(248, 201, 13);
   --sec-darker: hsl(48, 94%, 46%);
@@ -37,7 +37,7 @@
 
   --font-title: 20px;
   --font-normal: 16px;
-  --font-small: 14px;  
+  --font-small: 12px;
 }
 
 :root .to-dark-mode {

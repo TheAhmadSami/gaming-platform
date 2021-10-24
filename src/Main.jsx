@@ -2,18 +2,18 @@ import React from 'react';
 
 import './Assets/styles/styles.scss';
 
-import { Home, Login } from './Pages';
+import { Home, Auth } from './Pages';
 
 function Main(props) {
 
-  // localStorage.setItem('hala', 'i love you so much');
+  // localStorage.setItem('user_id', 'jf7596f9hc965ty9f8w37y7w386');
   
-  let x = localStorage.getItem('hala');
+  let x = localStorage.getItem('user_id');
 
   if (x) {
     return <Home />
   }else{
-    return <Login />
+    return <Auth />
   }
 
   // if (x) {

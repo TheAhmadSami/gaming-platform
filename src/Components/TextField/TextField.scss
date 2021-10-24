@@ -1,0 +1,12 @@
+@import '../../Assets/styles/_mixins.scss';
+
+
+input{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background: var(--grey-light);
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+}

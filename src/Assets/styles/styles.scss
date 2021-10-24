@@ -17,16 +17,7 @@ p {
 }
 
 a {
-  font-weight: 700;
   text-decoration: none;
-  color: var(--dark);
-  @include transition;
-  cursor: pointer;
-
-  &:hover {
-    text-decoration: underline;
-    color: var(--primary);
-  }
 }
 
 input {
