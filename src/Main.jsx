@@ -2,16 +2,14 @@ import React from 'react';
 
 import './Assets/styles/styles.scss';
 
-import { Home, Auth } from './Pages';
+import { MainBody, Auth } from './Pages';
 
 function Main(props) {
 
-  // localStorage.setItem('user_id', 'jf7596f9hc965ty9f8w37y7w386');
-  
   let x = localStorage.getItem('user_id');
 
   if (x) {
-    return <Home />
+    return <MainBody />
   }else{
     return <Auth />
   }

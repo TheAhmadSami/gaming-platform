@@ -10,7 +10,10 @@ function Login(props) {
   const [password, setPassword] = useState('');
 
   function loginFunction() {
-    console.log(username, password);
+    if (username && password) {
+      localStorage.setItem('user_id', username);
+      window.location.reload();
+    }
   }
 
   return (

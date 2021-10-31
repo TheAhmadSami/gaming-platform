@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Home (props){
-  return(
-    <div>
-      <p>Hi from Home</p>
-    </div>
+import './Home.scss';
+
+function Home(props) {
+  return (
+    <div>Hi from Home</div>
   )
 }
 

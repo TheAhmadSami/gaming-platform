@@ -4,7 +4,7 @@ import './Button.scss';
 
 function Button(props) {
   return (
-    <button {...props}>{props.text}</button>
+    <button className="btn" {...props}>{props.text}</button>
   )
 }
 
