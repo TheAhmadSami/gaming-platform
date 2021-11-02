@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ProfilePhoto from './../../Assets/media/avatar.jpg';
 import './NavBar.scss';
 
 function NavBar(props) {
@@ -17,7 +17,7 @@ function NavBar(props) {
       <div id="navbar-controls">
         <div id="messages">
           <button id="messages-btn">
-            <i className="fal fa-comment-dots"></i>
+            <i class="fal fa-comment-alt-dots"></i>
           </button>
 
           <div className="messages-content">
@@ -27,7 +27,7 @@ function NavBar(props) {
 
         <div id="notifications">
           <button id="notifications-btn">
-            <i className="fal fa-comment-dots"></i>
+            <i className="far fa-bell"></i>
           </button>
 
           <div className="notifications-content">
@@ -37,7 +37,7 @@ function NavBar(props) {
 
         <div id="user-profile">
           <button id="user-btn">
-            <img src="" alt="" />
+            <img src={ProfilePhoto} alt="profile_img" />
           </button>
 
           <div className="user-content">

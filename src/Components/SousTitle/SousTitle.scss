@@ -1,0 +1,31 @@
+@import "./../../Assets/styles/mixins.scss";
+
+#_soustitle {
+  padding: 10px;
+  @include flex;
+  gap: 20px;
+  color: rgb(59, 59, 59);
+  font-weight: 600;
+
+  i {
+    color: black;
+  }
+
+  &:hover {
+    background-color: rgba($color: #ffe079, $alpha: 0.4);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: orangered;
+    cursor: pointer;
+    border-left: orangered solid 4px;
+  }
+
+  //   &:active {
+  //     background-color: rgba($color: #ffe079, $alpha: 0.4);
+  //     border-top-right-radius: 20px;
+  //     border-bottom-right-radius: 20px;
+  //     color: orangered;
+  //     cursor: pointer;
+  //     border-left: orangered solid 4px;
+  //   }
+}

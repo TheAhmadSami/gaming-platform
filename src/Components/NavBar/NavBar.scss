@@ -1,2 +1,52 @@
-@import './../../Assets/styles/mixins.scss';
+@import "./../../Assets/styles/mixins.scss";
 
+#navbar {
+  width: 100%;
+  @include flex-between-center;
+  padding-left: 40px;
+  padding-right: 20px;
+
+  #search-bar {
+    @include flex-between-center;
+    gap: 20px;
+
+    .search-input {
+      background: var(--grey-light);
+      padding: 5px 20px;
+      border-radius: 20px;
+      @include flex-between-center;
+      gap: 10px;
+
+      input {
+        height: 26px;
+        border-radius: 20px;
+        background: var(--grey-light);
+        width: 400px;
+      }
+    }
+    @include flex-between-center;
+  }
+
+  #navbar-controls {
+    @include flex-between-center;
+    padding: 10px;
+    gap: 10px;
+
+    #messages-btn,
+    #notifications-btn,
+    #user-btn {
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    #user-profile {
+      #user-btn {
+        img {
+          width: 50px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

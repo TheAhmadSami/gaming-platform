@@ -1,1 +1,21 @@
-@import './../../Assets/styles/mixins.scss'; 
+@import "./../../Assets/styles/mixins.scss";
+
+#_sidebar {
+  height: 100%;
+  width: 100%;
+
+  .top-item {
+    padding: 2px 10px;
+    @include flex-start-center;
+    gap: 10px;
+
+    .logot {
+      width: 5px;
+    }
+  }
+
+  .bottom-item {
+    padding: 15px;
+    height: 100%;
+  }
+}

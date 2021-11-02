@@ -4,7 +4,7 @@ import './Home.scss';
 
 function Home(props) {
   return (
-    <div>Hi from Home</div>
+    <div id="_home">Hi from Home</div>
   )
 }
 
