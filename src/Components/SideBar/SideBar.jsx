@@ -9,7 +9,7 @@ function SideBar(props) {
     <div id="_sidebar">
 
       <div className="top-item">
-        <i class="fal fa-bars"></i>
+        <i className="fal fa-bars"></i>
         <div className='logot'>  <Logo /></div>
       </div>
       <div className="bottom-item">

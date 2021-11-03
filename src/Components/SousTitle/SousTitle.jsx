@@ -5,7 +5,7 @@ import './SousTitle.scss';
 function SousTitle(props) {
     return (
         <div id="_soustitle">
-            <i class={props.icon}></i>
+            <i className={props.icon}></i>
             {props.sousTitle}
         </div>
     )

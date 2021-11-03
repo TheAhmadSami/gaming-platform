@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import axios from 'axios';
+import * as config from './../../config';
 import { SocialMediaAuth, TextField, Button } from './../../Components/';
 
 import './Login.scss';
@@ -11,8 +12,30 @@ function Login(props) {
 
   function loginFunction() {
     if (username && password) {
-      localStorage.setItem('user_id', username);
-      window.location.reload();
+
+      var data = new FormData();
+      data.append('username', username);
+      data.append('password', password);
+
+      axios({
+        method: 'post',
+        url: config.API_LINK + 'login.php',
+        data: data,
+        headers: { 'Content-Type': 'multipart/form-data', }
+      })
+        .then(response => {
+          console.log(response.data[0].token);
+
+          localStorage.setItem('user_t', response.data[0].token);
+          window.location.reload();
+        })
+        .catch(response => {
+          console.log(response);
+        });
+
+
+      // localStorage.setItem('user_id', username);
+      // window.location.reload();
     }
   }
 
