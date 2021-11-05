@@ -20,7 +20,7 @@ function Main(props) {
       headers: { 'Content-Type': 'multipart/form-data', }
     })
       .then(response => {
-        console.log(response.data);
+        
       })
       .catch(response => {
         localStorage.clear('user_t');
