@@ -3,7 +3,6 @@ import { NavBar, SideBar } from '../../Components/';
 import { Home, Profile } from './../';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-
 import './MainBody.scss';
 
 
@@ -12,15 +11,12 @@ function MainBody(props) {
     <Router>
       <div id="_main_body">
 
-        <div className="main">
-          <SideBar />
-        </div>
+        <SideBar />
 
         <div className="main-body-content">
           <NavBar />
 
           <Switch>
-
 
             <Route path="/" exact>
               <Home />
@@ -33,8 +29,6 @@ function MainBody(props) {
             <Route path="/profile">
               <Profile />
             </Route>
-
-
 
           </Switch>
 

@@ -11,13 +11,14 @@ function NavBar(props) {
           <i className="fal fa-search"></i>
           <input />
         </div>
-        <i className="fal fa-microphone"></i>
+        <i className="fas fa-microphone"></i>
       </div>
 
       <div id="navbar-controls">
+
         <div id="messages">
           <button id="messages-btn">
-            <i className="fal fa-comment-alt-dots"></i>
+            <i className="fas fa-comment-alt-dots"></i>
           </button>
 
           <div className="messages-content">
@@ -27,7 +28,7 @@ function NavBar(props) {
 
         <div id="notifications">
           <button id="notifications-btn">
-            <i className="far fa-bell"></i>
+            <i className="fas fa-bell"></i>
           </button>
 
           <div className="notifications-content">

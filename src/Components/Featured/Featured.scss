@@ -1,0 +1,78 @@
+@import "./../../Assets/styles/_mixins.scss";
+
+#featured {
+  width: 500px;
+  height: 300px;
+  flex: 2;
+
+  .featured-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    background: var(--white);
+
+    .slick-slider {
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .featured-slide {
+      width: 100%;
+      height: 300px;
+
+
+      &#hala123 {
+        background: linear-gradient(to right, #162a28, #275954);
+        position: relative;
+        height: 300px;
+        padding: 30px;
+        color: #fff;
+        z-index: 0;
+        gap: 10px;
+
+        .info {
+          width: 50%;
+          margin-bottom: 10px;
+        }
+
+        .data {
+          margin-bottom: 10px;
+          @include flex-start-center;
+
+          gap: 20px;
+
+          .rate {
+            span {
+              margin-right: 5px;
+            }
+
+            i {
+              color: rgb(255, 154, 4);
+            }
+          }
+        }
+
+
+
+        img {
+          position: absolute;
+          top: -100px;
+          right: 40px;
+          width: 300px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+
+  .slick-slider {
+    height: 100%;
+
+    .slick-list {
+      height: 100%;
+    }
+  }
+
+
+}

@@ -1,7 +1,9 @@
 @import "./../../Assets/styles/mixins.scss";
 
-#_home {
-  background: var(--grey-light);
-  height: 100%;
-  width: 100%;
+#home {
+  
+  .top-section{
+    @include flex-start-center;
+    gap: 20px;
+  }
 }
