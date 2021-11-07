@@ -1,25 +1,46 @@
 import React from 'react';
 import { NavBar, SideBar } from '../../Components/';
-import { Home } from './../'
+import { Home, Profile } from './../';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 import './MainBody.scss';
 
 
 function MainBody(props) {
   return (
-    <div id="_main_body">
+    <Router>
+      <div id="_main_body">
 
-      <div className="main">
-        <SideBar />
+        <div className="main">
+          <SideBar />
+        </div>
+
+        <div className="main-body-content">
+          <NavBar />
+
+          <Switch>
+
+
+            <Route path="/" exact>
+              <Home />
+            </Route>
+
+            <Route path="/home">
+              <Home />
+            </Route>
+
+            <Route path="/profile">
+              <Profile />
+            </Route>
+
+
+
+          </Switch>
+
+        </div>
       </div>
-
-      <div className="main-body-content">
-        <NavBar />
-
-        <Home />
-
-      </div>
-    </div>
+    </Router>
   )
 }
 

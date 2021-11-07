@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import * as config from './../../config';
 import { SocialMediaAuth, TextField, Button } from './../../Components/';
 
@@ -63,10 +64,10 @@ function Login(props) {
 
       <Button text="Log In" onClick={loginFunction} />
 
-      <a href="forgot-password" className="password-forget">Forgotten password?</a>
+      <Link to="forgot-password" className="password-forget">Forgotten password?</Link>
 
       <p className="splitter"></p>
-      <p className="register-now">Don't have an acount? <a href="./register">Register</a></p>
+      <p className="register-now">Don't have an acount? <Link to="./register">Register</Link></p>
 
     </div>
   )

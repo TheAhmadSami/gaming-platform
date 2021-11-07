@@ -4,6 +4,7 @@ import * as config from './../../config';
 import { SocialMediaAuth, TextField, Button } from './../../Components/';
 
 import './Signup.scss';
+import { Link } from 'react-router-dom';
 
 function Signup(props) {
 
@@ -73,7 +74,7 @@ function Signup(props) {
       <Button text="Register" onClick={loginFunction} />
 
       <p className="splitter"></p>
-      <p className="register-now">Already have an acount? <a href="./login">Log In</a></p>
+      <p className="register-now">Already have an acount? <Link to="./login">Log In</Link></p>
 
     </div>
   )

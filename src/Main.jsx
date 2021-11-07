@@ -1,38 +1,43 @@
 import React from 'react';
-import axios from 'axios';
-import * as config from './config';
+// import axios from 'axios';
+// import * as config from './config';
 import './Assets/styles/styles.scss';
 
-import { MainBody, Auth } from './Pages';
+// import { MainBody, Auth } from './Pages';
+import { MainBody } from './Pages';
+
+
 
 function Main(props) {
 
-  let token = localStorage.getItem('user_t');
+  return <MainBody />
 
-  var data = new FormData();
-  data.append('token', token);
+  // let token = localStorage.getItem('user_t');
 
-  if (token) {
-    axios({
-      method: 'post',
-      url: config.API_LINK + 'checkToken.php',
-      data: data,
-      headers: { 'Content-Type': 'multipart/form-data', }
-    })
-      .then(response => {
-        
-      })
-      .catch(response => {
-        localStorage.clear('user_t');
-        window.location.reload();
-      });
-  }
+  // var data = new FormData();
+  // data.append('token', token);
 
-  if (token) {
-    return <MainBody />
-  } else {
-    return <Auth />
-  }
+  // if (token) {
+  //   axios({
+  //     method: 'post',
+  //     url: config.API_LINK + 'checkToken.php',
+  //     data: data,
+  //     headers: { 'Content-Type': 'multipart/form-data', }
+  //   })
+  //     .then(response => {
+
+  //     })
+  //     .catch(response => {
+  //       localStorage.clear('user_t');
+  //       window.location.reload();
+  //     });
+  // }
+
+  // if (token) {
+  //   return <MainBody />
+  // } else {
+  //   return <Auth />
+  // }
 
   // if (x) {
   //   if (checkLogin(x)) {
