@@ -12,7 +12,7 @@ import warrior_1 from './../../Assets/media/warrior-1.png';
 function Featured(props) {
 
   const slickSettings = {
-    dots: false,
+    dots: true,
     infinite: true,
     autoplay: false,
     speed: 300,
@@ -40,7 +40,25 @@ function Featured(props) {
               <p className="price">$14 USD</p>
             </div>
 
+            <Button text="Play Now" />
+            <i className="fab fa-windows"></i>
 
+            <img src={warrior_1} alt="" />
+          </div>
+
+          <div className="featured-slide" id="hala123">
+
+            <img src="" alt="" className="slide-logo" />
+
+            <p className="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed maiores qui veritatis culpa nesciunt, assumenda a nobis. Reprehenderit est nulla.</p>
+
+            <div className="data">
+              <p className="rate"><span>4.5</span><i className="fas fa-star"></i></p>
+              <p className="price">$14 USD</p>
+            </div>
+
+            <Button text="Play Now" />
+            <i className="fab fa-windows"></i>
 
             <img src={warrior_1} alt="" />
           </div>
