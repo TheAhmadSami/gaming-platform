@@ -82,7 +82,7 @@
       width: 30px;
       height: 30px;
 
-      &::before{
+      &::before {
         font-size: 40px;
         font-family: "Font Awesome 5 Pro";
         font-weight: 300;
@@ -97,7 +97,7 @@
     .slick-prev {
       right: 80px;
 
-      &::before{
+      &::before {
         content: '\f137';
       }
     }
