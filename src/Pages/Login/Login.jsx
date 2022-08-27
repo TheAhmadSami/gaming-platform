@@ -12,10 +12,10 @@ function Login(props) {
   const [password, setPassword] = useState('');
 
   function loginFunction() {
-    if (username && password) {
+    if (email && password) {
 
       var data = new FormData();
-      data.append('username', username);
+      data.append('email', email);
       data.append('password', password);
 
       axios({

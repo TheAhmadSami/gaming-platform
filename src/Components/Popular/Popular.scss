@@ -1,0 +1,43 @@
+@import "./../../Assets/styles/_mixins.scss";
+
+.container {
+  background-color: white;
+  width: min-content;
+  padding: 10px 10px 30px;
+  border-radius: 40px;
+
+  .det {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .popular_title {
+      color: black;
+      font-size: 19px;
+      font-weight: 500;
+    }
+
+    .type {
+      display: flex;
+      gap: 10px;
+      p {
+        font-size: 15px;
+        font-weight: 500;
+        color: grey;
+      }
+    }
+
+    .data {
+      @include flex;
+      gap: 20px;
+
+      i {
+        color: yellow;
+      }
+    }
+  }
+  img {
+    border-radius: 40px;
+  }
+}

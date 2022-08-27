@@ -11,61 +11,53 @@
     border-radius: 20px;
     padding: 10px;
     background: var(--white);
+    @include flex;
+    align-items: stretch;
+    gap: 10px;
 
-    .trending-slide {
-      width: 100%;
-      height: 100%;
-      display: flex !important;
-      @include flex-end-start;
-      @include flex-col;
-      gap: 10px;
+    .left-section,
+    .right-section {
+      flex: 1;
+    }
 
-      &#hala123 {
-        background: linear-gradient(to right, #162a28, #275954);
-        position: relative;
-        padding: 30px;
-        color: #fff;
-        z-index: 0;
+    .left-section {
+      .img-container {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+      }
+    }
 
-        .info {
-          width: 50%;
-        }
+    .right-section {
+      i {
+        font-size: 25px;
+      }
 
-        i {
-          font-size: 25px;
-        }
+      .data {
+        margin-bottom: 5px;
+        @include flex-start-center;
 
-        .data {
-          margin-bottom: 5px;
-          @include flex-start-center;
+        gap: 15px;
 
-          gap: 15px;
-
-          .rate {
-            span {
-              margin-right: 5px;
-            }
-
-            i {
-              font-size: 15px;
-              color: rgb(255, 154, 4);
-            }
+        .rate {
+          span {
+            margin-right: 5px;
           }
-        }
 
-        // button{
-        //   font-size: ;
-        // }
-
-        img {
-          position: absolute;
-          top: -100px;
-          right: 40px;
-          width: 300px;
-          z-index: -1;
+          i {
+            font-size: 15px;
+            color: rgb(255, 154, 4);
+          }
         }
       }
     }
+
+    // .hala {
+    //   background-color: red;
+    //   width: 50%;
+    //   border-bottom-right-radius: 10 px;
+    //   border-top-right-radius: 10 px;
+    // }
   }
 
   .slick-slider {
@@ -86,7 +78,7 @@
         font-size: 40px;
         font-family: "Font Awesome 5 Pro";
         font-weight: 300;
-        content: '\f138';
+        content: "\f138";
       }
     }
 
@@ -98,7 +90,7 @@
       right: 80px;
 
       &::before {
-        content: '\f137';
+        content: "\f137";
       }
     }
 
@@ -114,6 +106,4 @@
       }
     }
   }
-
-
 }

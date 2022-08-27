@@ -3,7 +3,7 @@
 #featured {
   width: 500px;
   height: auto;
-  flex: 2;
+  flex: 5;
 
   .featured-content {
     width: 100%;
@@ -86,7 +86,7 @@
         font-size: 40px;
         font-family: "Font Awesome 5 Pro";
         font-weight: 300;
-        content: '\f138';
+        content: "\f138";
       }
     }
 
@@ -98,7 +98,7 @@
       right: 80px;
 
       &::before {
-        content: '\f137';
+        content: "\f137";
       }
     }
 
@@ -114,6 +114,4 @@
       }
     }
   }
-
-
 }

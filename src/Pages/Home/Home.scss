@@ -1,9 +1,15 @@
 @import "./../../Assets/styles/mixins.scss";
 
 #home {
-  
-  .top-section{
+  .top-section {
     @include flex-start-center;
     gap: 20px;
+    padding-bottom: 10px;
+  }
+
+  .bottom-section {
+    @include flex-start-center;
+    gap: 20px;
+    // overflow-x: scroll;
   }
 }

@@ -25,25 +25,27 @@ function Trending(props) {
 
       <div className="trending-content">
 
-        <Slider {...slickSettings}>
+        <div className="left-section">
+          <div className="img-container" style={{ backgroundImage: `url(${image})` }}>
 
-          <div className="hala">
-            <img src={image} alt="" />
+          </div>
+        </div>
+
+        <div className="right-section">
+          <p className="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed maiores qui veritatis culpa nesciunt, assumenda a nobis. Reprehenderit est nulla.</p>
+
+          <div className="data">
+            <p className="rate"><span>4.5</span><i className="fas fa-star"></i></p>
+            <p className="price">$14 USD</p>
           </div>
 
-          <div className="hala">
-          <img src={image} alt="" />
-          </div>
+          <i className="fab fa-windows"></i>
+        </div>
 
-          <div className="hala">
-          <img src={image} alt="" />
-          </div>
 
-        </Slider>
+      </div >
 
-      </div>
-
-    </div>
+    </div >
   )
 }
 
